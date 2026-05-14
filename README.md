@@ -44,7 +44,7 @@ Somatic Dashboard serves as a specialized interface for bioinformaticians and cl
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Charts:** [Recharts](https://recharts.org/)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **Components:** Radix UI / Shadcn UI (Optional/Recommended)
+- **Components:** Radix UI / Shadcn UI
 
 ---
 
@@ -52,19 +52,18 @@ Somatic Dashboard serves as a specialized interface for bioinformaticians and cl
 
 ```text
 src/
- ├── app/                 # Next.js app router & page definitions
- ├── components/          # UI Components
- │   ├── dashboard/       # Specialized dashboard widgets
- │   ├── charts/          # Recharts implementation wrappers
- │   ├── variants/        # Tables, drawers, and variant logic
- │   └── layout/          # Sidebar, Navbar, and Global wrappers
+ ├── app/                 # Next.js App Router (Pages & Routing)
+ │   ├── coverage/        # Coverage metrics view
+ │   ├── overview/        # Main dashboard overview
+ │   ├── qc/              # Quality control metrics view
+ │   ├── reports/         # Report generation view
+ │   ├── variants/        # Variant analysis and tables
+ │   ├── globals.css      # Global styles and Tailwind directives
+ │   └── layout.tsx       # Root layout configuration
  │
- ├── data/
- │   └── mock-data/       # JSON-based mock genomic datasets
- │
- ├── types/               # TypeScript interfaces & enums
- ├── hooks/               # Custom React hooks
- └── utils/               # Formatting and calculation helpers
+ └── components/          # Reusable React Components
+     ├── layout/          # Dashboard shell, sidebar, and metric cards
+     └── ui/              # Atomic UI elements (Badge, Button, Card, Sheet, etc.)
 ```
 
 ---
@@ -78,7 +77,7 @@ src/
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/somatic-dashboard.git
+   git clone [https://github.com/yourusername/somatic-dashboard.git](https://github.com/yourusername/somatic-dashboard.git)
    ```
 2. **Enter the directory:**
    ```bash
@@ -87,11 +86,13 @@ src/
 3. **Install dependencies:**
    ```bash
    npm install
-   ```
+   
+```
 4. **Run the development server:**
    ```bash
    npm run dev
-   ```
+   
+```
 5. **View the app:**
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
