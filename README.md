@@ -77,7 +77,7 @@ src/
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/somatic-dashboard.git](https://github.com/yourusername/somatic-dashboard.git)
+   git clone [https://github.com/semihgzbyk/somatic-dashboard.git](https://github.com/semihgzbyk/somatic-dashboard.git)
    ```
 2. **Enter the directory:**
    ```bash
