@@ -26,7 +26,7 @@ export default function Sidebar() {
       <div className="flex h-full flex-col px-4 py-6">
         <div className="px-2">
           <div className="text-base font-semibold tracking-tight text-slate-900">
-            Detagen Somatic Dashboard
+            DetaDNA Somatic Dashboard
           </div>
           <div className="text-xs text-slate-500">
             Clinical interface
